@@ -1,0 +1,8 @@
+venv/
+.vscode/
+.env
+engine/data/*
+media/
+*.ipynb
+__pycache__/
+data/

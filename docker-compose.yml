@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  engine:
+    build:
+      context: ./engine
+    # Create a .env file in the root of the project and add your environment variables there
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    networks:
+      - mekari_chatbot_network
+
+  interface:
+    build:
+      context: ./interface
+    ports:
+      - "8501:8501"
+    depends_on:
+      - engine
+    networks:
+      - mekari_chatbot_network
+
+networks:
+  mekari_chatbot_network:
+    driver: bridge
