@@ -16,11 +16,11 @@ Video and GIF stored on `./assets/`.
 
 ### Chatbot Interface
 
-<img src="./assets/2.gif" alt="Chatbot Interface Demo" width="550"/>
+<img src="./assets/1.gif" alt="Chatbot Interface Demo" width="550"/>
 
 ### Evaluation Script
 
-<img src="./assets/1.gif" alt="Evaluation Script Demo" width="550"/>
+<img src="./assets/2.png" alt="Evaluation Script Demo" width="550"/>
 
 ## Methods
 
@@ -119,7 +119,7 @@ The project includes an evaluation script (`eval/eval.py`) to assess the perform
 
 ### Metrics
 
--   **SQL Evaluation:** Measures the accuracy of generated SQL queries against expected queries. Queries are robustly normalized using `sqlparse` for a less rigid comparison, ignoring differences in case, whitespace, aliases (`AS` clauses), and semicolons.
+-   **SQL Evaluation:** Measures the accuracy of generated SQL queries against expected queries. Queries are robustly normalized using `sqlparse` for a less rigid comparison, ignoring differences in case, whitespace, aliases (`AS` clauses), and semicolon.
 -   **RAG Evaluation:** Uses the ROUGE-L F1 score to measure the lexical similarity between the generated RAG answers and the expected ground truth responses. A higher ROUGE-L F1 score indicates better similarity.
 
 ## Logging
