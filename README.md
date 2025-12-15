@@ -56,7 +56,7 @@ The project is divided into two main components:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/hfahrudin/mekari_chatbot.git
+   git clone https://github.com/hfahrudin/fraud-chatbot.git
    cd mekari_chatbot
    ```
 
