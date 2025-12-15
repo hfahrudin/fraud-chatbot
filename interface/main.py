@@ -2,10 +2,10 @@ import streamlit as st
 import requests
 import json
 
-st.set_page_config(page_title="Fraud Q&A Chatbot")
+st.set_page_config(page_title="Nokcha - Fraud Q&A Chatbot", page_icon="🤖")
 
 def main():
-    st.title("Fraud Q&A Chatbot")
+    st.title("Nokcha - Fraud Q&A Chatbot")
 
     if "messages" not in st.session_state:
         st.session_state.messages = []

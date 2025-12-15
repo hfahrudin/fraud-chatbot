@@ -4,7 +4,7 @@ from fastapi.responses import PlainTextResponse, StreamingResponse, JSONResponse
 from dotenv import load_dotenv
 import json
 import logging
-from agent import FraudAgent
+from agent import NokchaAgent
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -13,7 +13,7 @@ load_dotenv()
 
 # Initialize FastAPI app
 app = FastAPI(redirect_slashes=False)
-fraud_agent = FraudAgent()
+fraud_agent = NokchaAgent()
 
 # Set all CORS enabled origins
 app.add_middleware(

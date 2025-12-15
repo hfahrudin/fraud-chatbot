@@ -1,6 +1,6 @@
-# Fraud Chatbot
+# Nokcha - Fraud Q&A Chatbot
 
-This project is a fraudulent transaction detection chatbot. It uses a combination of a vector database (FAISS) for knowledge retrieval and a SQL database (SQLite) for structured data queries. The chatbot is built with FastAPI and powered by `deepagent`.
+Nokcha agent is one stop solution to analyze fraud related matters within provided context. It uses a combination of a vector database (FAISS) for knowledge retrieval and a SQL database (SQLite) for structured data queries. The chatbot is built with FastAPI and powered by `deepagent`.
 
 ## Features
 

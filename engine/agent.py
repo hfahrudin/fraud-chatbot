@@ -10,9 +10,9 @@ from prompt import DEEP_AGENT_PROMPT
 load_dotenv()
 
 
-class FraudAgent():
+class NokchaAgent():
     def __init__(self, storage_path="media"):
-        logging.info("Initializing FraudAgent")
+        logging.info("Initializing NokchaAgent")
         self.llm = ChatOpenAI(model_name="gpt-4o", temperature=0.7, max_completion_tokens=1200)
         self.storage_path = storage_path
         self.vectorestore = KnowledgeBaseManager(kb_folder=self.storage_path + "/faiss_index")
